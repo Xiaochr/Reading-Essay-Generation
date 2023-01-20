@@ -1,6 +1,6 @@
 # Reading-Essay-Generation
 
-Codes of paper *Reading Essay Generation via a Two-stage Generative Model*. 
+Codes for paper *Reading Essay Generation via a Two-stage Generative Model*. 
 
 ## Set up
 
@@ -8,17 +8,27 @@ Codes of paper *Reading Essay Generation via a Two-stage Generative Model*.
 pip install -r requirements.txt
 ```
 
-For codes that require PPLM, please install PPLM (See more guidance in [PPLM repository](https://github.com/ReadingEssayGeneration/PPLM))
+For codes that require PPLM, please install PPLM (See more guidance in [the original PPLM repository](https://github.com/uber-research/PPLM))
+
+<!-- ```bash
+git clone https://github.com/ReadingEssayGeneration/PPLM.git
+``` -->
 
 ```bash
-git clone https://github.com/ReadingEssayGeneration/PPLM.git
+git clone https://github.com/uber-research/PPLM.git
 ```
+
+(If errors occur when using the PPLM, it is recommended to use [our modified one](https://anonymous.4open.science/r/PPLM-A468/). )
 
 ## Fine-tune GPT-2
 
 We fine-tune the GPT-2 model with our reading essay dataset in *gpt2_finetune.py*. 
 
-Due to the confidentiality of educational resources, we are not able to publicly offer the access to the dataset. Nonetheless, our fine-tuned GPT-2 model is provided in [Google Drive](https://drive.google.com/drive/folders/1_fqua3n-axGPAUPjbL-0sisNbq0dMDd2?usp=sharing). Please download the folder containing the model and move it to `\model\`. 
+Due to the confidentiality of educational resources, we are not able to publicly offer the access to the dataset. 
+
+Also, we are not allowed by the anonymous policy to offer explicit Google Drive links so far, and the model files are too large to upload directly in the paper submission page. Nonetheless, the access to our fine-tuned GPT-2 model will be provided immediately after the anonymous stage. 
+
+<!-- Nonetheless, our fine-tuned GPT-2 model is provided in [Google Drive](https://drive.google.com/drive/folders/1_fqua3n-axGPAUPjbL-0sisNbq0dMDd2?usp=sharing). Please download the folder containing the model and move it to `\model\`.  -->
 
 ## Optimal Hyper-parameters in PPLM
 
